@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Function</title>
+</head>
+<body>
+  <h1>JavaScript Practice Function</h1>
+  <script>
+    // 1. Define Practice
+    function printHeart() {
+      console.log("<3");
+    }
+    // Execute function once
+    printHeart();
+
+    // 2. Return Value Practice
+    const calculateProduct = function(x, y) {
+      return x * y;
+    };
+    console.log(calculateProduct(2, 3)); // Output: 6
+    console.log(calculateProduct(9, 9)); // Output: 81
+    console.log(calculateProduct(5, 4)); // Output: 20
+
+    // 3. Scope Practice - Part A
+    let Animal = "Giant Pacific Octopus";
+    function observe() {
+      let Animal = "Pajama Squid";
+      console.log(Animal);
+    }
+    observe(); // Output: Pajama Squid
+
+    // 4. Scope Practice - Part B
+    let deadlyAnimal = "Blue-Ringed Octopus";
+    function handledeadlyAnimal() {
+      let deadlyAnimal = "Scorpion fish";
+      console.log(deadlyAnimal);
+    }
+    handledeadlyAnimal(); // Output: Scorpion fish
+    console.log(deadlyAnimal); // Output: Blue-Ringed Octopus
+
+    // 5. Arrow Function Exercise
+    const sayHello = name => `Hello ${name}!`;
+    console.log(sayHello("Sora")); // Output: Hello Sora!
+    console.log(sayHello("Rosa"));   // Output: Hello Rosa!
+  </script>
+</body>
+</html>
